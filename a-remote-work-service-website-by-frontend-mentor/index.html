@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <!-- header and nav for dexktop -->
+        <header class="dexktop">
+            <img src="images\logo.svg" alt="logo" />
+            <ul class="nav">
+                <div class="normalNav">
+                    <li class="liDropdownOne">
+                        features
+                        <img src="images\icon-arrow-down.svg" alt="dropdown" />
+                        <img
+                            class="upArrowOne"
+                            src="images\icon-arrow-up.svg"
+                            alt="dropup"
+                            style="display: none"
+                        />
+                        <ul class="dropdownOne">
+                            <li>
+                                <img src="images\icon-todo.svg" alt="an icon" />
+                                todos
+                            </li>
+                            <li>
+                                <img
+                                    src="images\icon-calendar.svg"
+                                    alt="an icon"
+                                />
+                                calender
+                            </li>
+                            <li>
+                                <img
+                                    src="images\icon-reminders.svg"
+                                    alt="an icon"
+                                />
+                                reminders
+                            </li>
+                            <li>
+                                <img
+                                    src="images\icon-planning.svg"
+                                    alt="an icon"
+                                />
+                                planning
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="liDropdownTwo">
+                        company
+                        <img src="images\icon-arrow-down.svg" alt="dropdown" />
+                        <img
+                            class="upArrowTwo"
+                            src="images\icon-arrow-up.svg"
+                            alt="dropup"
+                            style="display: none"
+                        />
+                        <ul class="dropdownTwo">
+                            <li>history</li>
+                            <li>our team</li>
+                            <li>blog</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">career</a></li>
+                    <li><a href="#">about</a></li>
+                </div>
+                <div class="floatNav">
+                    <li><a href="#">login</a></li>
+                    <li class="register"><a href="#">register</a></li>
+                </div>
+            </ul>
+        </header>
+        <!-- header and nav for mobile -->
+        <header class="mobile">
+            <img src="images\logo.svg" alt="logo" />
+            <img
+                src="images\icon-menu.svg"
+                alt="openmenu"
+                id="openNav"
+                onclick="openNav()"
+            />
+            <img
+                src="images\icon-close-menu.svg"
+                alt="closemenu"
+                id="closeNav"
+                onclick="closeNav()"
+            />
+        </header>
+        <!-- nav for mobile -->
+        <ul class="mobileNav" id="mobileNav">
+            <li class="liDropdownOne" onclick="dropdownOne()">
+                features <img src="images\icon-arrow-down.svg" alt="dropdown" />
+                <img
+                    class="upArrowOne"
+                    src="images\icon-arrow-up.svg"
+                    alt="dropup"
+                    style="display: none"
+                />
+            </li>
+            <ul class="dropdownOneMobile" id="dropdownOneMobile">
+                <li>
+                    <img src="images\icon-todo.svg" alt="an icon" />
+                    <a href="#">todos</a>
+                </li>
+                <li>
+                    <img src="images\icon-calendar.svg" alt="an icon" /><a
+                        href="#"
+                        >calender</a
+                    >
+                </li>
+                <li>
+                    <img src="images\icon-reminders.svg" alt="an icon" /><a
+                        href="#"
+                        >reminders</a
+                    >
+                </li>
+                <li>
+                    <img src="images\icon-planning.svg" alt="an icon" />
+                    <a href="#">planning</a>
+                </li>
+            </ul>
+            <li class="liDropdownTwo" onclick="dropdownTwo()">
+                company <img src="images\icon-arrow-down.svg" alt="dropdown" />
+                <img
+                    class="upArrowTwo"
+                    src="images\icon-arrow-up.svg"
+                    alt="dropup"
+                    style="display: none"
+                />
+            </li>
+            <ul class="dropdownTwoMobile" id="dropdownTwoMobile">
+                <li><a href="#">history</a></li>
+                <li><a href="#">our team</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+            <li><a href="#">career</a></li>
+            <li><a href="#">about</a></li>
+            <li class="login"><a href="#">login</a></li>
+            <li class="register"><a href="#">register</a></li>
+        </ul>
+        <div class="contents" id="contents">
+            <!-- first/main content -->
+            <div class="mainContent">
+                <h2 class="mainContentH2">Make remote work</h2>
+                <h5 class="mainContentH5">
+                    Get your team in sync, no matter your location. Streamline
+                    processes, create team rituals, and watch productivity soar.
+                </h5>
+                <button class="mainContentBtn">
+                    <a href="#">Learn More</a>
+                </button>
+                <div class="sponsorsLogos">
+                    <img src="images\client-databiz.svg" alt="sponsors" />
+                    <img
+                        class="centerLogo"
+                        src="images\client-audiophile.svg"
+                        alt="sponsors"
+                    />
+                    <img src="images\client-meet.svg" alt="sponsors" />
+                    <img src="images\client-maker.svg" alt="sponsors" />
+                </div>
+            </div>
+            <!-- second row -->
+            <img
+                src="images\image-hero-desktop.png"
+                alt="a background image"
+                class="image"
+                id="image"
+            />
+        </div>
+        <!-- footer -->
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Treasure</a>.
+        </div>
+        <script></script>
+    </body>
+</html>
